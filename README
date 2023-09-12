@@ -1,0 +1,41 @@
+Loan status predictions - EDA and ML model
+Goal: To analyze a loan application dataset with various features, finding trends, correlations and finally building a machine learning model to predict wether an pllication will be likely be approved or rejected.
+
+data source:
+- the loan preictions dataset is obtained from kaggle
+    https://www.kaggle.com/datasets/architsharma01/loan-approval-prediction-dataset
+- language: python 3
+- libraries: pandas, numpy, matplotlib, seaborn, plotly, sklearn, metrics
+
+Project description
+- This is my first data science project and it was a fun and engaging experience working through it
+
+  Cleaning Data:
+    - column names and values were removed of artifacts
+    - str values were converted to int
+    - columns combined for simplicity
+
+  EDA:
+    - questions were answered via plotting pie chart, bar plots, scatter and linear graphs
+    - statistial analysis and testing: correlations
+
+  Machine Learning ML:
+    - data was split to test train and train set down-sampled to contain equal distribution of approved vs rejected apllications. This is to fit the model without skewing accuracy over one of the binary outcomes.
+    - not all features were included in the fitting as including more did not seem to improve the accuracy of the model, but all features can certainly be included.
+    - 3 models were fitted
+      - logistic regression
+      - decision Tree
+      - gaussian naive bayes
+   - models were scored and results speculated using metrics confusion matrix
+
+Conclusion:
+  - Decision Tree was the best model with a 95% accuracy in predictions. By modifing the train set to contain equal data of approved vs rejected applications, the occurence of Type 1 error has been greatly reduced.
+
+
+Next step:
+   - it would also be interesting to fit the data to random forest
+   - while this is not a giant dataset, it would be workwhile using k-fold cross-validation to split the test-train data sets and see if there is improvement to the model.
+
+
+Hope you will enjoy my first attempt at data science and I intend to continue to work on projects, learn and make a successful career change!
+    
